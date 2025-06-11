@@ -19,7 +19,13 @@ npm install
 ```bash
 REACT_APP_API_URL=http://localhost:8000
 ```
+### Using in GitHub Codespaces
 
+When the backend runs in a Codespace, port `8000` is forwarded and a unique URL is shown in the **Ports** tab. Copy this address (for example `https://8000-<your-codespace>.githubpreview.dev`) and set `REACT_APP_API_URL` to it when starting the frontend:
+
+```bash
+REACT_APP_API_URL=https://8000-<your-codespace>.githubpreview.dev npm start
+```
 ## Development
 
 Start the development server:
