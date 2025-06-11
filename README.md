@@ -37,6 +37,12 @@ PINECONE_API_KEY=your_pinecone_api_key_here
 OPENAI_API_KEY=your_openai_api_key_here
 ```
 
+## GitHub Codespaces
+
+You can run this project in a cloud devcontainer using GitHub Codespaces.
+From the repository page, click **Code** then **Open with Codespaces**.
+The container installs Python and Node dependencies automatically and forwards ports `8000` and `3000`.
+
 ## Usage
 
 ### Basic Example
