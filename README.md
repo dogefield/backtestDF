@@ -196,6 +196,7 @@ npm install
 REACT_APP_API_URL=http://localhost:8000 npm start
 ```
 
+In a Codespace, the backend URL is the forwarded address for port 8000 shown in the **Ports** tab (for example `https://8000-<your-codespace>.githubpreview.dev`). Assign this value to `REACT_APP_API_URL` before starting the frontend.
 ### Using Them Together
 
 1. Start the backend server.
