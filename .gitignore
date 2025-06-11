@@ -22,10 +22,11 @@ ENV/
 *.ipynb_checkpoints/
 
 # Output files
-*.html
 *.png
 *.jpg
-*.json
+# Allow frontend static files
+!crypto-backtest-frontend/public/*.html
+!crypto-backtest-frontend/public/*.json
 
 # Keep CSV files since they're input data
 !CEMD_*.csv
