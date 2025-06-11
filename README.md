@@ -42,7 +42,7 @@ OPENAI_API_KEY=your_openai_api_key_here
 ### Basic Example
 
 ```python
-from EricBacktest import CryptoBacktester
+from ericbacktest import CryptoBacktester
 
 # Initialize the backtester
 backtester = CryptoBacktester()
@@ -169,6 +169,32 @@ for trade in backtester.trades[:5]:
     print(trade)
 ```
 
+## Backend API
+
+A lightweight HTTP server is provided in `api_server.py`. After installing the Python dependencies and configuring your `.env` file, start the server with:
+
+```bash
+python api_server.py
+```
+
+The server listens on `http://localhost:8000` by default and exposes endpoints to parse strategies and run backtests.
+
+## Frontend Dashboard
+
+The React frontend lives in `crypto-backtest-frontend/`. It communicates with the backend API.
+
+```bash
+cd crypto-backtest-frontend
+npm install
+# optional: set the API URL if the backend isn't on localhost
+REACT_APP_API_URL=http://localhost:8000 npm start
+```
+
+### Using Them Together
+
+1. Start the backend server.
+2. Run the frontend with `npm start`.
+3. The dashboard will call the backend at the URL specified by `REACT_APP_API_URL`.
 ## Contributing
 
 1. Fork the repository
